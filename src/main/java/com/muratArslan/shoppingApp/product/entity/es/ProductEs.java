@@ -2,6 +2,7 @@ package com.muratArslan.shoppingApp.product.entity.es;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.elasticsearch.annotations.Document;
 
@@ -9,6 +10,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
+@RequiredArgsConstructor
 public class ProductEs {
     private String id;
     private String name;
